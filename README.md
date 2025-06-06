@@ -1,4 +1,4 @@
-# Full Stack Development – Level 1
+# Full Stack Development Jun 2025
 
 This module is part of the official curriculum of **Abacus Computing Institute (AbacusCI)** and is designed to introduce students to full stack development using a practical and integrated approach.
 
