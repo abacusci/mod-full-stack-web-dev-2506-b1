@@ -11,9 +11,7 @@ It is structured around:
 - **Web Development**: PHP, HTML, CSS, JavaScript
 - **Database**: PostgreSQL
 - **Server & Deployment**: Apache, Linux basics
-- **Mobile Development**: Android apps with .NET MAUI
 - **Programming Foundations**: Variables, logic, flow control, and more
-- **Automation & IoT Intro**: Node-RED fundamentals
 - **Development Practices**: GitHub for collaboration and Obsidian for documentation
 
 ## Requirements
