@@ -1,45 +1,49 @@
-# Full Stack Development Jun 2025
+# Full Stack Development – June 2025
 
-This module is part of the official curriculum of **Abacus Computing Institute (AbacusCI)** and is designed to introduce students to full stack development using a practical and integrated approach.
+This repository corresponds to the **active class** of the Full Stack Development module offered by **Abacus Computing Institute (AbacusCI)** from **June 2 to June 25, 2025**.
 
-## Overview
+## 🧠 What You Will Learn
 
-The goal of this module is to train students in the fundamentals of building complete digital applications—from server to interface and mobile app—using real tools and workflows used by modern developers.
+In this module, students build a complete school enrollment system from scratch, gaining hands-on experience with:
 
-It is structured around:
+- **Front-end Development**: HTML, CSS, JavaScript
+- **Back-end Programming**: PHP (vanilla)
+- **Databases**: PostgreSQL with relational modeling
+- **Infrastructure Basics**: Linux, Apache
+- **Workflows**: GitHub for collaboration and Obsidian for personal documentation
 
-- **Web Development**: PHP, HTML, CSS, JavaScript
-- **Database**: PostgreSQL
-- **Server & Deployment**: Apache, Linux basics
-- **Programming Foundations**: Variables, logic, flow control, and more
-- **Development Practices**: GitHub for collaboration and Obsidian for documentation
+## 🛠 Structure of the Module
 
-## Requirements
+Classes are held **every Monday and Wednesday from 6:00 PM to 8:00 PM**, onsite.
 
-This module expects students to:
+Each session includes:
 
-- Be at least **13 years old** or receive instructor approval.
-- Be comfortable using a computer.
-- Understand basic logic and reading comprehension.
-- Have a personal computer for practicing outside of class.
+- Live explanation (conference style)
+- Guided practical activities
+- Step-by-step development of the team project
 
-## Learning Activities
+## 💻 Project-Based Learning
 
-Each week consists of:
+From the first session, students contribute to the development of a **School Enrollment System**. The project grows week by week, introducing new technical skills through practice.
 
-- **Conference Session** (Theory - Onsite)
-- **Practical Class** (Guided tasks - Onsite)
+- All assignments and progress are tracked in GitHub via **issues**, **commits**, and **team collaboration**
+- Full documentation is available in the **project wiki**
 
-## Evaluation and Certification
+## ✅ Requirements
 
-To complete the module and receive certification:
+To participate and succeed in this module, students must:
 
-- Students must attend the **final onsite exam**.
-- Active participation and task completion are required.
-- Certification is granted only if the student demonstrates competence.
+- Be **at least 13 years old**
+- Bring their own computer for home practice
+- Understand basic logic and reading
+- Be committed to attending and participating during the full month
 
-## Notes
+## 🎓 Certification
 
-- No refunds will be issued after payment.
-- Students are expected to review the module scope and ensure they meet the expected entry level.
-- This module is **part of the Full Stack Developer Track**, and can be followed by more advanced modules in the future.
+To receive a certificate of completion:
+
+- Students must attend the **final onsite exam**
+- Demonstrate progress and participation
+- Submit a working version of the project as a team
+
+Certificates are awarded only if competence is clearly demonstrated.
