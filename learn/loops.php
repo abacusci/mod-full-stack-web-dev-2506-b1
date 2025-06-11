@@ -12,5 +12,5 @@ $students = [
 ];
 
 foreach($students as $id => $car) {
-    echo $id . " - " .$car['name'] ."\n";
+    echo $id . " - " .$car['age'] ."\n";
 }
