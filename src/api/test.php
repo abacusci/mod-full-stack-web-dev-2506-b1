@@ -2,6 +2,6 @@
 
 return function () {
 	return [
-		'message' => 'Test Welcome Message'
+		'message' => 'School Management System'
 	];
 };
