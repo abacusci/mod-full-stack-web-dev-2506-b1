@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>School Management System</title>
+	</head>
+	<body>
+		<!-- heading -->
+		<h1 id="page-title">innerHTML</h1>
+		
+		<button id="btnExample">Click me</button>
 
-<head>
-	<title>School Management System</title>
-</head>
-	<h1 id="page-title"></h1>
-<body>
-	<script>
-		window.addEventListener('load', async function () {
-			try {
-				const response = await fetch('/api.php?e=test');
-				const data = await response.json();
-				document.getElementById('page-title').innerHTML = data.message;
-			} catch (error) {
-				alert('Error: ' + error.message);
-			}
-		});
+		<script>
+			document.getElementById("btnExample").addEventListener('click', function(){
+				alert('Hello');
+			});
 
-	</script>
-</body>
+			window.addEventListener('load', async function () {
+				try {
+					const response = await fetch('/api.php?e=test');
+					const data = await response.json();
+					document.getElementById('page-title').innerHTML = data.message;
+				} catch (error) {
+					alert('Error: ' + error.message);
+				}
+			});
 
+		</script>
+	</body>
 </html>
