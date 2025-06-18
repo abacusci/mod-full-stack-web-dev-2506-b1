@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>School Management System</title>
+		<link href="/styles.css" rel="stylesheet"/>
 	</head>
 	<body>
 		<!-- heading -->
@@ -9,21 +10,6 @@
 		
 		<button id="btnExample">Click me</button>
 
-		<script>
-			document.getElementById("btnExample").addEventListener('click', function(){
-				alert('Hello');
-			});
-
-			window.addEventListener('load', async function () {
-				try {
-					const response = await fetch('/api.php?e=test');
-					const data = await response.json();
-					document.getElementById('page-title').innerHTML = data.message;
-				} catch (error) {
-					alert('Error: ' + error.message);
-				}
-			});
-
-		</script>
+		<script src="/app.js" type="text/javascript"></script>
 	</body>
 </html>
