@@ -1,13 +1,37 @@
-document.getElementById("btnExample").addEventListener('click', function(){
-	alert('Hello');
-});
+function getElement(id) {
+	return document.getElementById(id);
+}
 
-window.addEventListener('load', async function () {
+function onEvent(id, event, func)
+{
+	getElement(id).addEventListener(event, func);
+}
+
+function onClick(id, func){
+	onEvent(id, 'click', func);
+}
+
+async function call(endpoint) {
+	const response = await fetch('/api.php?e=' + endpoint);
+	const data = await response.json();
+	return data;
+}
+
+function show(id, content)
+{
+	getElement(id).innerHTML = content;
+}
+
+onClick('btnLoad', async function(){
 	try {
-		const response = await fetch('/api.php?e=test');
-		const data = await response.json();
-		document.getElementById('page-title').innerHTML = data.message;
+		const data = await call('test');
+		show('page-title', data.message);
 	} catch (error) {
 		alert('Error: ' + error.message);
 	}
 });
+
+/*
+window.addEventListener('load', async function () {
+	
+});*/

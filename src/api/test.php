@@ -2,6 +2,6 @@
 
 return function () {
 	return [
-		'message' => 'School Management System'
+		'message' => date("Y-m-d h:i:s")
 	];
 };
