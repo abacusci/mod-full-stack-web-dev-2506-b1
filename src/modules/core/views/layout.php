@@ -9,7 +9,8 @@
 		<h1 id="page-title"></h1>
 		
 		<button id="btnLoad">Load the title</button>
-
+		<p>Example text</p>
 		<script src="/app.js" type="text/javascript"></script>
 	</body>
 </html>
+
