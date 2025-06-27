@@ -1,6 +1,8 @@
 <?php
 
 session_start();
+include "../src/modules/core/model/database.php";
+query("SELECT 1;");
 
 $q = $_GET['q'] ?? null;
 
