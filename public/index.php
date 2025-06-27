@@ -1,34 +1,43 @@
 <?php
 
 session_start();
+
 include "../src/modules/core/model/database.php";
-query("SELECT 1;");
 
 $q = $_GET['q'] ?? null;
 
 $show = true;
 
+if ($q == 'logout') {
+    unset($_SESSION['username']);
+    $show=true;
+}
+
+if (isset($_SESSION['username']))
+{
+    echo "Welcome {$_SESSION['username']} !";
+    $show = false;
+}
+
 if ($q == 'login/submit') {
     $school_name = $_POST['school_name'];
     $user_name = $_POST['user_name'];
     $password  = $_POST['password'];
-    
-    if ($password == "123") {
-        echo "Login!";
-       
-        $show = false;
 
-    } else {
-    
+    $sql = "SELECT username FROM users WHERE school = '$school_name' AND username = '$user_name' AND pass = '$password';";
+    $result = query($sql);
+
+    if (empty($result)) {
         echo "Access denied";
-
-       
+    } else {
+        $_SESSION['username'] = $user_name;
+        echo "Login!";
+        $show = false;
     }
-
 }
 
-
 if ($show == true){
-    include "../src/modules/login/view/login_form.php";
+    $page = "../src/modules/login/view/login_form.php";
+    include "../src/modules/core/views/layout.php";
 }
 
