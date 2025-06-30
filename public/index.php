@@ -4,6 +4,10 @@ session_start();
 
 include "../src/modules/core/model/database.php";
 
+// https://localhost/?q=dashboard
+// https://localhost/?q=dashboard/main
+// https://localhost/?q=students/main
+
 $q = $_GET['q'] ?? null;
 
 $show = true;
@@ -13,31 +17,37 @@ if ($q == 'logout') {
     $show=true;
 }
 
+// is logged?
 if (isset($_SESSION['username']))
 {
-    echo "Welcome {$_SESSION['username']} !";
     $show = false;
-}
-
-if ($q == 'login/submit') {
-    $school_name = $_POST['school_name'];
-    $user_name = $_POST['user_name'];
-    $password  = $_POST['password'];
-
-    $sql = "SELECT username FROM users WHERE school = '$school_name' AND username = '$user_name' AND pass = '$password';";
-    $result = query($sql);
-
-    if (empty($result)) {
-        echo "Access denied";
-    } else {
-        $_SESSION['username'] = $user_name;
-        echo "Login!";
-        $show = false;
+    
+    if (empty($q)) 
+    {
+        $q = "dashboard";
     }
+
+    if (stripos($q, '/') === false)
+    {
+        $q = $q . '/main';
+    }
+
+    $filename = "../src/modules/$q.php";
+
+    if (file_exists($filename))
+    {
+        $page = $filename;
+        include "../src/modules/core/views/layout.php";
+    } 
+    else
+    {
+        echo "page not found";
+    }
+    
+} 
+else 
+{
+    include "../src/modules/login/control/login.php";
 }
 
-if ($show == true){
-    $page = "../src/modules/login/view/login_form.php";
-    include "../src/modules/core/views/layout.php";
-}
 
