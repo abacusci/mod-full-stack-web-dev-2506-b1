@@ -1,6 +1,6 @@
 # Module: Full Stack Development – June 2025
 
-This repository corresponds to the **active class** of the Full Stack Development module offered by **Abacus Computing Institute (AbacusCI)** from **June 2 to June 25, 2025**.
+This repository corresponds to the **active class** of the Full Stack Development module from **June 2 to June 25, 2025**.
 
 ## 🧠 What You Will Learn
 
